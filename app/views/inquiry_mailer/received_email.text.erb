@@ -2,11 +2,11 @@
 <%= @user.name %>様
 ===============================
 
-この度は<%= @user.name %>様の告白についてお知らせします。
+この度は<%= @user.name %>様に告白がございますことをお知らせします。
 
 
-【<%= @user.name %>様との関係】
+【<%= @user.yourname %>様と<%= @user.name %>様との関係】
 <%= @user.relationship%>
 
-【あなたの好きな人からのお言葉】
+【あなたの好きな人<% @user.yourname %>様からのお言葉】
 <%= @user.content %>

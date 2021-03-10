@@ -2,7 +2,8 @@ ja:
   activerecord:
     attributes:
       inquiry:
-        name: "好きな人のお名前"
-        email: "好きな人のメールアドレス"
-        relationship: "好きな人との関係"
+        yourname: "あなたのお名前"
+        name: "あなたの好きな人のお名前"
+        email: "あなたの好きな人のメールアドレス"
+        relationship: "あなたの好きな人との関係"
         content: "何か伝えたいこと"

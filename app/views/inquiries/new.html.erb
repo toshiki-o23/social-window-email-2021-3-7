@@ -17,6 +17,10 @@
     <% end %>
     
       <div class="form-group">
+       <%= f.label :yourname %>
+        <%= f.text_field :yourname, autofocus: true, class: "form-control", placeholder: "お名前" %>
+      </div>
+      <div class="form-group">
        <%= f.label :name %>
         <%= f.text_field :name, autofocus: true, class: "form-control", placeholder: "お名前" %>
       </div>
