@@ -2,7 +2,7 @@ ja:
   activerecord:
     attributes:
       inquiry:
-        name: "社会の窓が空いている人のお名前"
-        email: "社会の窓が空いている人のメールアドレス"
-        relationship: "社会の窓が空いている人との関係"
+        name: "好きな人のお名前"
+        email: "好きな人のメールアドレス"
+        relationship: "好きな人との関係"
         content: "何か伝えたいこと"
