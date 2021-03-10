@@ -8,7 +8,7 @@ module TechpitSocialwindow
   class Application < Rails::Application
 
     config.load_defaults 5.1
-    config.i18n.default_locale = :ja # 追加部分
+    config.i18n.default_locale = :ja
 
   end
 end

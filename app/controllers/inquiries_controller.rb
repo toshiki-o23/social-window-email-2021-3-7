@@ -13,12 +13,8 @@ class InquiriesController < ApplicationController
   end
 
   def thanks
-
-    # ==========ここから追加する==========
     @inquiry = Inquiry.new(inquiry_params)
     InquiryMailer.received_email(@inquiry).deliver_now
-    # ==========ここまで追加する==========
-
   end
 
   private
