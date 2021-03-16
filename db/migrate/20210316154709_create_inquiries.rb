@@ -5,6 +5,7 @@ class CreateInquiries < ActiveRecord::Migration[5.1]
       t.string :email
       t.string :relationship
       t.string :content
+      t.string :yourname
 
       t.timestamps
     end

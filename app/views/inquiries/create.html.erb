@@ -1,0 +1,40 @@
+<div class='topPage'>
+  <div class="container">
+    <h1>やっぱり告白を変えます</h1>
+    <%= form_with(model: @inquiry, url: inquiries_edit_path, method: :patch, local: true) do |f| %>
+
+    <% if @inquiry.errors.any? %>
+      <div class="alert alert-danger" role="alert">
+        <strong>入力内容にエラーがあります</strong>
+        <ul>
+          <% @inquiry.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    
+      <div class="form-group">
+       <%= f.label :yourname %>
+        <%= f.text_field :yourname, autofocus: true, class: "form-control", placeholder: "お名前" %>
+      </div>
+      <div class="form-group">
+       <%= f.label :name %>
+        <%= f.text_field :name, autofocus: true, class: "form-control", placeholder: "お名前" %>
+      </div>
+      <div class="form-group">
+       <%= f.label :email %>
+        <%= f.text_field :email, autofocus: true, class: "form-control", placeholder: "メールアドレス" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :relationship %>
+        <%= f.select(:relationship, [["知り合い", "知り合い"], ["友達", "友達"], ["恋人", "恋人"], ["夫婦", "夫婦"]], {}, class: "form-control") %>
+      </div>
+      <div class="form-group">
+        <%= f.label :content %>
+        <%= f.text_area :content, class: "form-control", placeholder: "伝えたいことがあれば入力してください" %>
+      </div>
+       <div class="text-center"><%= f.submit '確認画面へ', class: 'btn btn-primary' %></div>
+    <% end %>
+  </div>
+</div>

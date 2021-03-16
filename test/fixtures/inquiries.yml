@@ -5,9 +5,11 @@ one:
   email: MyString
   relationship: MyString
   content: MyString
+  yourname: MyString
 
 two:
   name: MyString
   email: MyString
   relationship: MyString
   content: MyString
+  yourname: MyString
