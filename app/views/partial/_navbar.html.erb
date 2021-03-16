@@ -1,9 +1,11 @@
 
 <div class="topPage">
   <div class="container">
-    <form class="d-grid gap-2 justify-content-md-end">
-      <a class="btn btn-outline-primary me-md-2" type="button" href="/">最初から！</a>
-    </form>
+    <% unless controller.controller_name == 'inquiries' && controller.action_name == 'thanks' %>
+      <form class="d-grid gap-2 justify-content-md-end">
+    <%= link_to '最初から！', root_path, class: 'btn btn-outline-primary me-md-2 '  %>
+    </form>  
+    <% end %>
   </div>
 </div>
 

@@ -27,6 +27,7 @@ class InquiriesController < ApplicationController
 
 
   def thanks
+    
     @inquiry = Inquiry.new(inquiry_params)
     InquiryMailer.received_email(@inquiry).deliver_now
   end
