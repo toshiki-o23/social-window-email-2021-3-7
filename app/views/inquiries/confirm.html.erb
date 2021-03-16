@@ -36,7 +36,7 @@
           <% if @inquiry.content.empty? %>
            特になし
           <% else %>
-           <%= @inquiry.content %>
+           <%=simple_format @inquiry.content %>
           <% end%>
           <%= f.hidden_field :content %>
         </div>
